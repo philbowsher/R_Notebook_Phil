@@ -9,7 +9,6 @@ This is my import procedure
 library(haven)
 cars <- read_sas("http://www.principlesofeconometrics.com/sas/cars.sas7bdat", 
     NULL)
-View(cars)
 ```
 
 This is my data wrtan and data viz
