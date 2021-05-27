@@ -1,0 +1,38 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is my import procedure 
+
+```{r}
+library(haven)
+cars <- read_sas("http://www.principlesofeconometrics.com/sas/cars.sas7bdat", 
+    NULL)
+View(cars)
+```
+
+This is my data wrtan and data viz
+
+
+```{r}
+
+library(tidyverse)
+
+
+cars %>%
+ filter(MPG >= 13L & MPG <= 47L) %>%
+ filter(CYL >= 4L & CYL <= 8L) %>%
+ filter(ENG >= 
+    95L & ENG <= 455L) %>%
+ filter(WGT >= 2109L & WGT <= 5140L) %>%
+ ggplot() +
+ aes(x = MPG, y = CYL) +
+ geom_point(size = 1L, colour = "#0c4c8a") +
+ theme_minimal()
+
+
+
+
+```
+
