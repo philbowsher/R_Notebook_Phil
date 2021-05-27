@@ -3,7 +3,11 @@ title: "This is an amazing title. Really."
 output: html_notebook
 ---
 
+<<<<<<< HEAD
 This is my import procedure (yes)
+=======
+This is my import procedure (it is great, isn't it)
+>>>>>>> origin/master
 
 ```{r}
 library(haven)
