@@ -3,7 +3,7 @@ title: "This is an amazing title. Really."
 output: html_notebook
 ---
 
-This is my import procedure 
+This is my import procedure (it is great, isn't it)
 
 ```{r}
 library(haven)
